@@ -3,6 +3,7 @@ import { Credits } from "./components/Credits";
 import { Dossiers } from "./components/Dossiers";
 import { Fitting } from "./components/Fitting";
 import { Hero } from "./components/Hero";
+import { Live } from "./components/Live";
 import { Numbers } from "./components/Numbers";
 import { PointerAtmosphere } from "./components/PointerAtmosphere";
 import { Voice } from "./components/Voice";
@@ -16,6 +17,7 @@ export default function App() {
         <Hero />
         <Voice />
         <Numbers />
+        <Live />
         <Credits />
         <Wardrobe />
         <Fitting />
