@@ -3,6 +3,7 @@ import { MAILTO } from "@/content";
 import { downloadPdf, type PdfKind } from "@/utils/pdf-generator";
 import { Feather } from "./Feather";
 import { Note } from "./Notes";
+import heroBg from "@/assets/hero-bg.jpg";
 
 /**
  * The one authored moment. The envelope is read, a feather rocks down out of
@@ -44,6 +45,10 @@ export function Hero() {
       onPointerMove={onPointerMove}
       onPointerLeave={onPointerLeave}
     >
+      <div aria-hidden="true" className="absolute inset-0 -z-20">
+        <img src={heroBg} alt="" className="h-full w-full object-cover object-top" />
+      </div>
+      <div aria-hidden="true" className="absolute inset-0 -z-[15] bg-plum/78" />
       <div aria-hidden="true" className="hero-spot pointer-events-none absolute inset-0 -z-10" />
 
       <div className="hero-top mx-auto flex w-full max-w-[1320px] flex-wrap items-center justify-between gap-4 px-6 pt-6 text-[13px] md:px-10 md:pt-8">
