@@ -46,7 +46,7 @@ export function Hero() {
       onPointerLeave={onPointerLeave}
     >
       <div aria-hidden="true" className="absolute inset-0 -z-20">
-        <img src={heroBg} alt="" className="h-full w-full object-cover object-top" />
+        <img src={heroBg} alt="" className="h-full w-full object-cover object-[center_32%]" />
       </div>
       <div aria-hidden="true" className="absolute inset-0 -z-[15] bg-plum/78" />
       <div aria-hidden="true" className="hero-spot pointer-events-none absolute inset-0 -z-10" />
